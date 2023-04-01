@@ -1,0 +1,52 @@
+.footer__row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    list-style-type: none;
+    ul {
+        list-style-type: none; 
+        
+    }
+    h2 {
+        margin-bottom: 20px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #656566;
+    }
+}
+
+.box a{
+    text-decoration: none;
+    color: inherit;
+}
+.box li:not(:last-child){
+    margin-bottom: 10px;
+}
+.h-box {
+    column-count: 2;
+}
+
+.contacts {
+    text-align: right;
+    img:not(:last-child) {   
+        margin-right: 14px;   
+
+    }
+}
+.contacts li:not(:last-child){
+    margin-bottom: 20px;   
+
+}
+.confidentiality {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: right;
+    a {
+        color: inherit;
+    }
+}
