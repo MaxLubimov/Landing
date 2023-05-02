@@ -54,6 +54,7 @@ p {
         line-height: 58px;
         margin-bottom: 30px;
         @media (max-width: 320px) {
+            width: inherit;
             font-size: 36px;
             line-height: 44px;
             margin-bottom: 15px;
