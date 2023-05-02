@@ -6,13 +6,16 @@
         display: flex;
         align-items: flex-start;
     }
+    @media (max-width: 320px) {
+        margin-top: 0px;
+        height: 55px;
+        margin-bottom: 0px;
+    }
 }
 
 .nav__row {
     display: flex;
     justify-content: space-between;
-
-    
     ul {
         display: flex;
         list-style-type: none;
@@ -28,13 +31,27 @@
     font-size: 16px;
     font-weight: 500;
     line-height: 19px;
+    @media (max-width: 320px) {
+        height: inherit;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+        ul {
+            margin-block-start: 0px;
+            align-items: center;
+        }
+        li:not(:last-child) {    
+            margin-right: 16px;   
+        }
+        li:last-child {    
+            display: none; 
+        }
+    }
 }
 .logo {
     width: 165px;
     height: 24px;
-
     top: 45px;
-
     img {
         margin-top: 11px;
         margin-bottom: 10px;
@@ -47,7 +64,21 @@
         line-height: 12px;
         width: 135px;
     };
+    @media (max-width: 320px) {
+        display: none;
+    }
 }
 .navigation-list {
     margin-right: 137px;
+    @media (max-width: 320px) {
+        display: flex;
+        margin-right: 0px;
+    }
 }
+
+.contact {
+    @media (max-width: 320px) {
+        display: none;
+    }
+}
+
